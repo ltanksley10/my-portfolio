@@ -104,12 +104,14 @@ i { font-size: 20px;}
 .iconEffect:hover { transform: scale(1.1);}
 #projects { width: 100%; height: auto; background: #f5f5f5!important; box-shadow: .5px .5px 15px -5px gray inset; top: 46vw; z-index: 0; 
     margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; padding-bottom: 5vh;}
-#project1 { width: auto; height: 85%;}
-#project2 { width: auto; height: 85%;}
-#project3 { width: auto; height: 85%;}
+#project1 { width: auto; height: 100%;}
+#project2 { width: auto; height: 100%;}
+#project3 { width: auto; height: 100%;}
+#project4 { width: auto; height: 100%;}
 #project1 img{ border-radius: 3px;}
 #project2 img{ border-radius: 3px;}
 #project3 img{ border-radius: 3px;}
+#project4 img { border-radius: 3px;}
 
 /*SKILLS SECTION*/
 .icons{ text-align: center; font-family: 'Rajdhani', sans-serif; font-size: 25px;}
@@ -147,8 +149,8 @@ footer { display: flex; justify-content: space-between; }
   #a1 { font-size: 40px; }
   #a2 { font-size: 20px; }
   #label1 { font-size: 40px; }
-  #label2 { font-size: 28px; }
-  #label3 { font-size: 18px!important; }
+  #label2 { font-size: 26px; }
+  #label3 { font-size: 17px!important; }
   #label4 { font-size: 40px; }
   .icons { font-size: 20px; }
   #resume { font-size: 20px; }
@@ -162,12 +164,16 @@ footer { display: flex; justify-content: space-between; }
   #overlay2 { top: 25vw; left: 32vw; }
   #aboutMe { padding-top: 5vw; }
   #a1 { font-size: 35px; }
-  #a2 { font-size: 16px; }
+  #a2 { font-size: 17px; }
   #a2 i { font-size: 2.5vw; }
   #label1 { font-size: 35px; }
   #label2 { font-size: 25px; }
-  #label3 { font-size: 16px!important; }
   #label4 { font-size: 35px; }
+  #projects { flex-direction: column; }
+  #project1 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
+  #project2 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
+  #project3 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
+  #project4 { width: 80%; height: 75%; margin: 0 auto; }
   .icons { font-size: 16px; }
   #htmlImg { display: none;}
   #cssImg { display: none;}
@@ -204,10 +210,10 @@ footer { display: flex; justify-content: space-between; }
   #label3 { font-size: 18px!important; }
   #aboutMe { padding-top: 0vw; padding-bottom: 2vw; }
   #aboutMe ul { text-align: center; margin: 0; padding: 0; list-style: none; }
-  #projects { flex-direction: column; }
   #project1 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
   #project2 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
-  #project3 { width: 80%; height: 75%; margin: 0 auto; }
+  #project3 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
+  #project4 { width: 80%; height: 75%; margin: 0 auto; }
   .icons { font-size: 18px; }
   #resume { font-size: 18px; }
 }
@@ -222,6 +228,7 @@ footer { display: flex; justify-content: space-between; }
   #project1 { width: 90%; height: 85%; }
   #project2 { width: 90%; height: 85%; }
   #project3 { width: 90%; height: 85%; }
+  #project4 { width: 90%; height: 85%; }
   .icons { font-size: 16px; }
   #resume { font-size: 16px; }
   #contactInfo { flex-direction: column; }
