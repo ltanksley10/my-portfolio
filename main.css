@@ -1,25 +1,19 @@
-* {
-    box-sizing: border-box; 
-}
-
-html {
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; }
+html { margin: 0; padding: 0; }
 
 /*NAVBAR*/
 nav { background-color: #068481; font-family: 'Rajdhani', sans-serif; font-size: 18px; color: white!important;}
 nav a:hover{ color: #edca7e!important;}
-.navbar-brand { font-size: 30px!important; font-family: 'Bangers', cursive; text-shadow: 1px 1px 2px black;}
+.navbar-brand h1 { font-size: 30px!important; margin: 0; font-family: 'Bangers', cursive; text-shadow: 1px 1px 2px black;}
 .navbar-toggler { font-size: 10px!important;}
 i { font-size: 20px;}
 
 /*BANNER SECTION*/
 #bannerImage { width: 100%; height: auto;  z-index: 0; margin-top: 10px; }
 #bannerImage2 { width: 100%; height: auto; z-index: 0; display: none;}
-#overlay { position: absolute; z-index: 1; color: #425880; top: 17vw; left: 30vw; text-shadow: 1px 1px 2px gray;  
+#overlay { position: absolute; z-index: 1; color: #425880; top: 17vw; left: 0; right: 0; margin: 0 auto; text-shadow: 1px 1px 2px gray;  
   font-family: 'Rajdhani', sans-serif;}
-#overlay2 { position: absolute; z-index: 2; top: 25vw; left: 33vw; font-size: 2.5vw; font-family: 'Rajdhani', sans-serif;}
+#overlay2 { position: absolute; z-index: 2; top: 25vw; left: 0; right: 0; margin: 0 auto; font-size: 2.5vw; font-family: 'Rajdhani', sans-serif;}
 .css-typing p {
   border-right: .13em solid orange;
   white-space: nowrap;
@@ -35,7 +29,7 @@ i { font-size: 20px;}
   animation-fill-mode: forwards;
 }
 .css-typing p:nth-child(2) {
-  width: 13em;
+  width: 8.5em;
   opacity: 0;
   -webkit-animation: type2 3.5s steps(40, end), blink-caret .75s step-end infinite;
   animation: type2 3.5s steps(40, end), blink-caret .75s step-end infinite; 
@@ -80,9 +74,10 @@ i { font-size: 20px;}
 /*ABOUT SECTION*/
 #about { width: 100%; background-color: white; z-index: 0; padding-bottom: 1vw; }
 #aboutImage { width: 25%; height: auto; border-radius: 5px; box-shadow: 5px 5px 10px #ccc; margin: 2vw 7vw 2vw 7vw; z-index: 1; float: left; }
-#aboutMe { padding-top: 8vw; }
+#aboutMe { padding-top: 9vw; }
 #a1 { font-size: 50px; font-family: 'Rajdhani', sans-serif; font-weight: 600; color: #068481; text-shadow: 1px 1px 2px gray; display: block; }
 #a2 { font-size: 30px; font-family: 'Rajdhani', sans-serif; line-height: 2.5; list-style-type: none; text-align: left; }
+.listStyle { display: none; }
 #a2 i { font-size: 2vw; }
 #a3 { display: none; }
 .fa-laptop-code { color: purple; }
@@ -92,8 +87,8 @@ i { font-size: 20px;}
 /*LABELS*/
 #label1{ width: 100%; font-family: 'Rajdhani', sans-serif; font-weight: 600; color: #425880; text-shadow: 1px 1px 2px gray; 
     text-align: center; font-size: 50px; padding-top: 2vh; padding-bottom: 1vh; }
-#label2 { font-size: 35px; font-family: 'Rajdhani', sans-serif;}
-#label3 {font-family: 'Rajdhani', sans-serif; font-size: 25px!important;}
+.label2 { font-size: 35px; font-family: 'Rajdhani', sans-serif;}
+.label3 {font-family: 'Rajdhani', sans-serif; font-size: 22px!important;}
 #label4{ width: 100%; font-family: 'Rajdhani', sans-serif; font-weight: 600;color: #068481; text-shadow: 1px 1px 2px gray; 
      text-align: center; font-size: 50px; padding-top: 2vh; padding-bottom: 1vh; }
 
@@ -101,7 +96,6 @@ i { font-size: 20px;}
 .inner { overflow: hidden;}
 .inner img { transition: all 1.5s ease;}
 .inner:hover img{ transform: scale(1.5);}
-.iconEffect:hover { transform: scale(1.1);}
 #projects { width: 100%; height: auto; background: #f5f5f5!important; box-shadow: .5px .5px 15px -5px gray inset; top: 46vw; z-index: 0; 
     margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; padding-bottom: 5vh;}
 #project1 { width: auto; height: 100%;}
@@ -139,9 +133,18 @@ footer { display: flex; justify-content: space-between; }
 @media screen and (max-width: 1500px) {
   #aboutMe { padding-top: 7vw; }
   #a2 { font-size: 25px; }
-  #label3 { font-size: 20px!important; }
+  .label3 { font-size: 20px!important; }
   .icons { font-size: 22px; }
   #resume { font-size: 22px; }
+}
+
+@media screen and (max-width: 1350px) {
+  .label3 { font-size: 18px!important; }
+}
+
+@media screen and (max-width: 1275px) {
+  .label2 { font-size: 30px; }
+  .label3 { font-size: 17px!important; }
 }
 
 @media screen and (max-width: 1200px) {
@@ -149,32 +152,31 @@ footer { display: flex; justify-content: space-between; }
   #a1 { font-size: 40px; }
   #a2 { font-size: 20px; }
   #label1 { font-size: 40px; }
-  #label2 { font-size: 26px; }
-  #label3 { font-size: 17px!important; }
+  .label2 { font-size: 22px; }
+  .label3 { font-size: 16px!important; }
   #label4 { font-size: 40px; }
-  .icons { font-size: 20px; }
-  #resume { font-size: 20px; }
+  .icons { font-size: 18px; }
+  #resume { font-size: 18px; }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1020px) {
   nav { font-size: 16px; }
   .navbar-brand { font-size: 25px!important; }
   i { font-size: 18px; }
-  #overlay { top: 18vw; left: 29.5vw; }
-  #overlay2 { top: 25vw; left: 32vw; }
-  #aboutMe { padding-top: 5vw; }
+  #overlay { top: 18vw; }
+  #overlay2 { top: 26vw; }
+  #aboutMe { padding-top: 5.5vw; }
   #a1 { font-size: 35px; }
   #a2 { font-size: 17px; }
   #a2 i { font-size: 2.5vw; }
   #label1 { font-size: 35px; }
-  #label2 { font-size: 25px; }
+  .label2 { font-size: 25px; }
   #label4 { font-size: 35px; }
   #projects { flex-direction: column; }
   #project1 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
   #project2 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
   #project3 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
   #project4 { width: 80%; height: 75%; margin: 0 auto; }
-  .icons { font-size: 16px; }
   #htmlImg { display: none;}
   #cssImg { display: none;}
   #bootstrapImg { display: none;}
@@ -195,35 +197,34 @@ footer { display: flex; justify-content: space-between; }
   #reactImg2{ display: inline-block; }
   #mongoImg2{ display: inline-block; }
   #gitImg2{ display: inline-block; }
-  #resume { font-size: 16px; }
-  #contactInfo { font-size: 16px; }
 }
 
 @media screen and (max-width: 768px) {
   #bannerImage { width: 100%; height: auto;  z-index: 0; display: none;}
   #bannerImage2 { width: 100%; height: auto; z-index: 0; display: inline-block; margin-top: 35px; }
-  #overlay { top: 28vw; left: 18vw; font-size: 7.5vw; }
-  #overlay2 { top: 39vw; left: 22vw; font-size: 4vw; }
+  #overlay { top: 28vw; font-size: 7.5vw; }
+  #overlay2 { top: 40vw; font-size: 4vw; }
   #aboutImage { display: none; }
   #intro { padding: 25px; }
-  #a2 { font-size: 18px; }
-  #label3 { font-size: 18px!important; }
+  #a2 { font-size: 20px; }
+  .label3 { font-size: 20px!important; }
   #aboutMe { padding-top: 0vw; padding-bottom: 2vw; }
   #aboutMe ul { text-align: center; margin: 0; padding: 0; list-style: none; }
   #project1 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
   #project2 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
   #project3 { width: 80%; height: 75%; margin: 0 auto 25px auto; }
   #project4 { width: 80%; height: 75%; margin: 0 auto; }
-  .icons { font-size: 18px; }
-  #resume { font-size: 18px; }
+  .icons { font-size: 20px; }
+  #resume { font-size: 20px; }
+  #contactInfo { font-size: 18px; }
 }
 
 @media screen and (max-width: 600px) {
   #bannerImage2 { margin-top: 45px; }
-  #overlay { top: 30vw; left: 17vw; }
-  #overlay2 { top: 41vw; left: 21vw; }
+  #overlay { top: 30vw; }
+  #overlay2 { top: 42vw; }
   #a2 { font-size: 16px; }
-  #label3 { font-size: 16px!important; }
+  .label3 { font-size: 16px!important; }
   #a2 i { font-size: 18px; }
   #project1 { width: 90%; height: 85%; }
   #project2 { width: 90%; height: 85%; }
@@ -235,25 +236,28 @@ footer { display: flex; justify-content: space-between; }
 }
 
 @media screen and (max-width: 500px) {
-  #overlay { top: 32vw; left: 15.5vw; font-size: 8vw; }
-  #overlay2 { top: 44vw; left: 18.5vw; font-size: 4.5vw; }
+  #overlay { top: 32vw; font-size: 8vw; }
+  #overlay2 { top: 44vw; font-size: 4.5vw; }
   #a1 { font-size: 30px; }
+  .listStyle { display: inline; }
+  .about-list { line-height: 1.75;}
   #label1 { font-size: 30px; }
-  #label2 { font-size: 20px; }
+  .label2 { font-size: 20px; }
   #label4 { font-size: 30px; }
+  #contactInfo { font-size: 16px; }
 }
 
 @media screen and (max-width: 400px) {
-  #overlay { top: 32vw; left: 13.5vw; font-size: 8.5vw; }
-  #overlay2 { top: 44vw; left: 15.5vw; font-size: 5vw; }
+  #overlay { top: 32vw; font-size: 8.5vw; }
+  #overlay2 { top: 44vw; font-size: 5vw; }
   #a1 { font-size: 25px; }
   #label1 { font-size: 25px; }
-  #label2 { font-size: 18px; }
+  .label2 { font-size: 18px; }
   #label4 { font-size: 25px; }
   #skillImgs { grid-template-columns: 50% 50%; grid-template-rows: 20% 20% 20% 20% 20%; }
 }
 
 @media screen and (max-width: 320px) {
-  #overlay { top: 33vw; left: 13vw; }
-  #overlay2 { top: 45vw; left: 15vw; }
+  #overlay { top: 33vw; }
+  #overlay2 { top: 45vw; }
 }

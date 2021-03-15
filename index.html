@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Tanksley Designs</title>
+        <meta name="description" content="Tanksley Designs portfolio page showing projects, skills and resume." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="shortcut icon" href="#" />
+        <meta name="robots" content="nofollow" />
+        <link rel="stylesheet" type="text/css" href="styles/new.css">
+        <link rel="shortcut icon" href="favicon.ico" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani&display=swap" rel="stylesheet">
@@ -15,7 +17,7 @@
         <header>
             <div>
                 <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark fixed-top py-0">
-                  <a class="navbar-brand" href="index.html">Tanksley Designs</a>
+                  <a class="navbar-brand" href="index.html"><h1>Tanksley Designs</h1></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -33,10 +35,10 @@
                     </ul>
                     <ul class="navbar-nav float-lg-right">
                       <li class="nav-item active">
-                        <a class="nav-link" href="https://github.com/ltanksley10"><i class="fab fa-github"></i></a>
+                        <a class="nav-link" href="#" aria-label="Github navigation link"><i class="fab fa-github"></i></a>
                       </li>
                       <li class="nav-item active">
-                        <a class="nav-link" href="https://www.linkedin.com/in/lori-tanksley-92a39078"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="nav-link" href="#" aria-label="LinkedIn navigation icon"><i class="fab fa-linkedin-in"></i></a>
                       </li>
                     </ul>
                   </div>
@@ -45,29 +47,29 @@
         </header>
         <main>
           <section>
-            <img class="img-fluid" id="bannerImage" src="images/1.png" alt="A white computer screen with a cup of coffee to the left, and a pile of 
+            <img class="img-fluid" id="bannerImage" src="images/1.jpeg" alt="A white computer screen with a cup of coffee to the left, and a pile of 
             unknown books to the right.">
-            <img class="img-fluid" id="bannerImage2" src="images/1.2.png" alt="A white computer screen with a cup of coffee to the left, and a pile of 
+            <img class="img-fluid" id="bannerImage2" src="images/1.2.jpeg" alt="A white computer screen with a cup of coffee to the left, and a pile of 
             unknown books to the right.">
             <div class="css-typing">
               <p id="overlay">
                 Hello world, I'm Lori.
               </p>
               <p id="overlay2">
-                Front-end Developer <span id="overlay2-1">&amp; Designer</span>
+                Front-end Developer </span>
               </p>
            </div> 
           </section>
           <section id="about">
               <div id="intro">
-                  <img class="img-fluid" id="aboutImage" src="images/2.png" alt="A young woman sitting at a desk near a bright window,
+                  <img class="img-fluid" id="aboutImage" src="images/2.jpeg" alt="A young woman sitting at a desk near a bright window,
                     working on her laptop and drinking a cup of coffee.">
                   <div id="aboutMe">
                     <ul id="a2">
                       <li id="a1">What I Do:
-                        <li><i class="fas fa-laptop-code"></i> Create unique sites to compliment the culture of businesses</li>
-                        <li><i class="fas fa-mobile-alt"></i> Focus on responsive designs to accommodate users on all devices</li>
-                        <li><i class="fas fa-assistive-listening-systems"></i> Develop every site with accessibility standards and SEO in mind</li>
+                        <li class="about-list"><span class="listStyle">~</span> Create unique websites for unique businesses</li>
+                        <li class="about-list"><span class="listStyle">~</span> Focus on responsive designs to accomodate users on all devices</li>
+                        <li class="about-list"><span class="listStyle">~</span> Develop with accessibility standards and SEO in mind</li>
                       </li>
                     </ul>
                   </div>
@@ -76,45 +78,45 @@
           <section>
             <div class="projectSep">
                 <div class="container-fluid card-deck row text-center justify-content-center" id="projects">
-                  <h3 id="label1">Recent Projects</h3>
-                  <div class="card shadow"  id="project1">
-                    <div class="inner">
-                      <img src="images/7.4.png" class="card-img-top" alt="A screenshot of BigCloudCorp homepage.">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title" id="label2">BigCloudCorp</h5>
-                      <p class="card-text" id="label3">A static site for a tech company built with HTML, CSS, &amp; AWS Lambda for the contact form.</p>
-                      <a href="#" class="btn btn-sm btn-outline-dark">View</a>
-                    </div>
-                  </div>
+                  <h2 id="label1">Recent Projects</h2>
                   <div class="card shadow"  id="project2">
                     <div class="inner">
-                      <img src="images/10.1.png" class="card-img-top" alt="A screenshot of the quote generator.">
+                      <img src="images/10.1.jpeg" class="card-img-top" alt="A screenshot of the quote generator.">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title" id="label2">Quote Generator</h5>
-                      <p class="card-text" id="label3">A random quote generator built with React.js for a freeCodeCamp project. Hosted in AWS.</p>
-                      <a href="#" class="btn btn-sm btn-outline-dark">View</a>
+                      <h3 class="card-title label2" >Quote Generator</h3>
+                      <p class="card-text label3">A random generator built with React &amp; Bootstrap.</p>
+                      <a href="https://quotes.loritanksley.com" class="btn btn-sm btn-outline-dark">View</a>
+                    </div>
+                  </div>
+                  <div class="card shadow"  id="project1">
+                    <div class="inner">
+                      <img src="images/12.jpeg" class="card-img-top" alt="A screenshot of BigCloudCorp homepage.">
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title label2">BigCloudCorp</h3>
+                      <p class="card-text label3">A static site built with HTML, CSS  &amp; FormSubmit.</p>
+                      <a href="https://dev.bigcloudcorp.com" class="btn btn-sm btn-outline-dark">View</a>
                     </div>
                   </div>
                   <div class="card shadow"  id="project3">
                     <div class="inner">
-                      <img src="images/9.2.png" class="card-img-top" alt="A screenshot of HogTank BBQ homepage.">
+                      <img src="images/9.3.jpeg" class="card-img-top" alt="A screenshot of HogTank BBQ homepage.">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title" id="label2">HogTank BBQ</h5>
-                      <p class="card-text" id="label3">A small-town brochure barbeque restaurant website. Built with HTML and CSS. Hosted in AWS.</p>
-                      <a href="#" class="btn btn-sm btn-outline-dark">View</a>
+                      <h3 class="card-title label2">HogTank BBQ</h3>
+                      <p class="card-text label3">A static site built with HTML, CSS &amp; Bootstrap.</p>
+                      <a href="https://hogtankbbq.loritanksley.com" class="btn btn-sm btn-outline-dark">View</a>
                     </div>
                   </div>
                   <div class="card shadow"  id="project4">
                     <div class="inner">
-                      <img src="images/11.png" class="card-img-top" alt="A screenshot of NASA APOD App webpage.">
+                      <img src="images/11.jpeg" class="card-img-top" alt="A screenshot of NASA APOD App webpage.">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title" id="label2">NASA APOD App</h5>
-                      <p class="card-text" id="label3">A web app built with NASA's Astronomy Photo of the Day API and React. Hosted in AWS.</p>
-                      <a href="#" class="btn btn-sm btn-outline-dark">View</a>
+                      <h3 class="card-title label2">NASA APOD App</h3>
+                      <p class="card-text label3">Built with NASA's Photo of the Day API &amp; React.</p>
+                      <a href="https://nasa-apod.loritanksley.com" class="btn btn-sm btn-outline-dark">View</a>
                     </div>
                   </div>
                 </div>
@@ -125,89 +127,89 @@
                 <h4 id="label4">Skills & Interests</h4>
                 <div class="container-fluid text-center" id="skillImgs">
                   <div class="iconEffect" id="htmlImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/html-5.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML5 icon" />
                     <p class="icons">HTML5</p>
                   </div>
                   <div class="iconEffect" id="cssImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/css3.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS3 icon" />
                     <p class="icons">CSS3</p>
                   </div>
                   <div class="iconEffect" id="bootstrapImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/bootstrap.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/bootstrap.png" alt="Bootstrap icon" />
                     <p class="icons">Bootstrap</p>
                   </div>
                   <div class="iconEffect" id="sassImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/sass.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/sass.png" alt="SASS icon" />
                     <p class="icons">SCSS</p>
                   </div>
                   <div class="iconEffect" id="jsImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/javascript.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/javascript.png" alt="Javascript icon" />
                     <p class="icons">JavaScript</p>
                   </div>
                   <div class="iconEffect" id="nodeImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/nodejs.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/nodejs.png" alt="Node.js icon" />
                     <p class="icons">Node.js</p>
                   </div>
                   <div class="iconEffect" id="npmImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/npm.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/npm.png" alt="NPM icon" />
                     <p class="icons">NPM</p>
                   </div>
                   <div class="iconEffect" id="reactImg" >
-                    <img class="img-fluid" src="https://img.icons8.com/nolan/96/react-native.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/nolan/96/react-native.png" alt="React icon" />
                     <p class="icons">ReactJS</p>
                   </div>
                   <div class="iconEffect" id="mongoImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/mongodb.png"/>
-                    <p class="icons">MongoDb</p>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/mongodb.png" alt="MongoDB icon" />
+                    <p class="icons">MongoDB</p>
                   </div>
                   <div class="iconEffect" id="gitImg">
-                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/git.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/96/000000/git.png" alt="Git icon" />
                     <p class="icons">Git</p>
                   </div>
                   <div class="iconEffect" id="htmlImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/html-5.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 icon" />
                     <p class="icons">HTML5</p>
                   </div>
                   <div class="iconEffect" id="cssImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/css3.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 icon" />
                     <p class="icons">CSS3</p>
                   </div>
                   <div class="iconEffect" id="bootstrapImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/bootstrap.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap icon" />
                     <p class="icons">Bootstrap</p>
                   </div>
                   <div class="iconEffect" id="sassImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/sass.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/sass.png" alt="SASS icon" />
                     <p class="icons">SCSS</p>
                   </div>
                   <div class="iconEffect" id="jsImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/javascript.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/javascript.png" alt="Javasript icon" />
                     <p class="icons">JavaScript</p>
                   </div>
                   <div class="iconEffect" id="nodeImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/nodejs.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js icon" />
                     <p class="icons">Node.js</p>
                   </div>
                   <div class="iconEffect" id="npmImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/npm.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/npm.png" alt="NPM icon" />
                     <p class="icons">NPM</p>
                   </div>
                   <div class="iconEffect" id="reactImg2" >
-                    <img class="img-fluid" src="https://img.icons8.com/nolan/48/react-native.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/nolan/48/react-native.png" alt="React icon" />
                     <p class="icons">ReactJS</p>
                   </div>
                   <div class="iconEffect" id="mongoImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/mongodb.png"/>
-                    <p class="icons">MongoDb</p>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB icon" />
+                    <p class="icons">MongoDB</p>
                   </div>
                   <div class="iconEffect" id="gitImg2">
-                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/git.png"/>
+                    <img class="img-fluid" src="https://img.icons8.com/color/48/000000/git.png" alt="Git icon" />
                     <p class="icons">Git</p>
                   </div>
                 </div>
               </div>
               <div class="container">
-                <p id="resume">View Resume: <a href="#"><img id="pdfImage" class="iconEffect" src="https://img.icons8.com/fluent/48/000000/pdf.png"/></a></p>
+                <p id="resume">View Resume: <a href="#"><img id="pdfImage" class="iconEffect" src="https://img.icons8.com/fluent/48/000000/pdf.png" alt="PDF icon" /></a></p>
               </div>
           </section>
           <section>
