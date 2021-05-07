@@ -75,15 +75,14 @@ main { background-color: #c0c0c0; }
 /*ABOUT SECTION*/
 #about { width: 100%; background-color: white; z-index: 0; clip-path: polygon(30% 0%, 84% 0, 100% 15%, 100% 100%, 70% 100%, 15% 100%, 0 84%, 0 0); }
 #intro { display: flex; justify-content: center; align-items: center; }
-#aboutImage { width: 25%; height: auto; border-radius: 5px; box-shadow: 3px 3px 10px gray; margin: 2vw 3vw 2vw 0vw; z-index: 1; float: left; }
+#aboutImage { width: 25%; height: auto; border-radius: 5px; box-shadow: 3px 3px 10px gray; margin: 2vw 3vw 2vw 0vw; }
+#aboutImage2 { display: none; }
 #a1 { font-size: 50px; font-family: 'Rajdhani', sans-serif; font-weight: 600; color: #068481; text-shadow: 1px 1px 2px gray; display: block; }
 #a2 { font-size: 30px; font-family: 'Rajdhani', sans-serif; line-height: 2.5; list-style-type: none; text-align: left; }
 .listStyle { display: none; }
 #a2 i { font-size: 2vw; }
 #a3 { display: none; }
-.fa-laptop-code { color: purple; }
-.fa-mobile-alt { color: #425880; }
-.fa-assistive-listening-systems { color: orange; }
+/*.fa-check { color: #de1738; font-size: 80%!important;}*/
 
 /*LABELS*/
 #label1{ width: 100%; font-family: 'Rajdhani', sans-serif; font-weight: 600; color: #425880; text-shadow: 1px 1px 2px gray; 
@@ -110,6 +109,14 @@ main { background-color: #c0c0c0; }
 #project3 img{ border-radius: 3px;}
 #project4 img { border-radius: 3px;}
 .btn { margin-top: 10px; }
+.swiper-button-prev { padding: 25px; border-radius: 0 60px 60px 0; left: 0px!important; background-image: url('../images/leftarrow.png')!important; background: rgba(6, 132, 129, .6);
+ background-repeat: no-repeat; background-position: center; box-shadow: 2px 9px 26px rgba(58, 87, 135, 0.7); }
+.swiper-button-next { padding: 25px; border-radius: 60px 0 0 60px; right: 0px!important; background: rgba(6, 132, 129, .6); background-image: url('../images/rightarrow.png')!important;
+ background-repeat: no-repeat; background-position: center; box-shadow: 2px 9px 26px rgba(58, 87, 135, 0.7); }
+.swiper-button-prev::after { display: none; }
+.swiper-button-next::after { display: none; }
+.swiper-button-prev:hover { padding-left: 35px; transition: all 200ms linear; background: rgba(192, 192, 192, 0.8); background-repeat: no-repeat; background-position: center;}
+.swiper-button-next:hover { padding-right: 35px; transition: all 200ms linear; background: rgba(192, 192, 192, 0.8); background-repeat: no-repeat; background-position: center;}
 .swiper-pagination-bullets { bottom: 0!important; }
 .swiper-container { margin-left: 15px!important; margin-right: 15px!important; padding: 0px 0px 30px 0px!important; height: 100%; width: 100%; }
 
@@ -204,7 +211,8 @@ footer { display: flex; justify-content: space-between; }
   #overlay { top: 28vw; font-size: 7.5vw; }
   #overlay2 { top: 40vw; font-size: 4vw; }
   #aboutImage { display: none; }
-  #intro { padding: 10px 20px 25px 20px; }
+  #aboutImage2 { display: block; border-radius: 5px; box-shadow: 3px 3px 10px gray; width: 98%; height: auto;  margin: 4vw auto 2vw auto;  }
+  #intro { flex-direction: column; padding: 10px 20px 25px 20px; }
   #a2 { font-size: 20px; }
   .label3 { font-size: 20px!important; }
   #aboutMe ul { text-align: center; margin: 0; padding: 0; list-style: none; }
@@ -234,6 +242,7 @@ footer { display: flex; justify-content: space-between; }
   #a1 { font-size: 30px; }
   .listStyle { display: inline; }
   .about-list { line-height: 1.75;}
+  #aboutImage2 { width: 87%; }
   #label1 { font-size: 30px; }
   .label2 { font-size: 20px; }
   #label4 { font-size: 30px; }
