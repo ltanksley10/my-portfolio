@@ -82,7 +82,6 @@ main { background-color: #c0c0c0; }
 .listStyle { display: none; }
 #a2 i { font-size: 2vw; }
 #a3 { display: none; }
-/*.fa-check { color: #de1738; font-size: 80%!important;}*/
 
 /*LABELS*/
 #label1{ width: 100%; font-family: 'Rajdhani', sans-serif; font-weight: 600; color: #425880; text-shadow: 1px 1px 2px gray; 
@@ -134,7 +133,6 @@ main { background-color: #c0c0c0; }
 #reactImg2{ display: none;}
 #mongoImg2{ display: none;}
 #gitImg2{ display: none;}
-/*#resume{ text-align: center; font-family: 'Rajdhani', sans-serif; font-size: 25px; padding-bottom: 20px;}*/
 
 /*CONTACT SECTION - FOOTER*/
 footer { display: flex; justify-content: space-between; }
@@ -147,7 +145,6 @@ footer { display: flex; justify-content: space-between; }
   #a2 { font-size: 25px; }
   .label3 { font-size: 20px!important; }
   .icons { font-size: 22px; }
-  /*#resume { font-size: 22px; }*/
 }
 
 @media screen and (max-width: 1350px) {
@@ -168,7 +165,6 @@ footer { display: flex; justify-content: space-between; }
   .label3 { font-size: 16px!important; }
   #label4 { font-size: 40px; }
   .icons { font-size: 18px; }
-  /*#resume { font-size: 18px; }*/
 }
 
 @media screen and (max-width: 1020px) {
@@ -211,13 +207,12 @@ footer { display: flex; justify-content: space-between; }
   #overlay { top: 28vw; font-size: 7.5vw; }
   #overlay2 { top: 40vw; font-size: 4vw; }
   #aboutImage { display: none; }
-  #aboutImage2 { display: block; border-radius: 5px; box-shadow: 3px 3px 10px gray; width: 98%; height: auto;  margin: 4vw auto 2vw auto;  }
+  #aboutImage2 { display: block; border-radius: 5px; box-shadow: 0px 3px 10px gray; width: 98%; height: auto;  margin: 4vw auto 2vw auto;  }
   #intro { flex-direction: column; padding: 10px 20px 25px 20px; }
   #a2 { font-size: 20px; }
   .label3 { font-size: 20px!important; }
   #aboutMe ul { text-align: center; margin: 0; padding: 0; list-style: none; }
   .icons { font-size: 20px; }
-  /*#resume { font-size: 20px; }*/
   #contactInfo { font-size: 18px; }
 }
 
@@ -232,7 +227,6 @@ footer { display: flex; justify-content: space-between; }
   #a2 i { font-size: 18px; }
   .icons { font-size: 16px; }
   #skills { clip-path: none; }
-  /*#resume { font-size: 16px; }*/
   #contactInfo { flex-direction: column; }
 }
 
@@ -256,7 +250,6 @@ footer { display: flex; justify-content: space-between; }
   #label1 { font-size: 25px; }
   .label2 { font-size: 18px; }
   #label4 { font-size: 25px; }
-  #skillImgs { grid-template-columns: 50% 50%; grid-template-rows: 20% 20% 20% 20% 20%; }
 }
 
 @media screen and (max-width: 320px) {
@@ -267,5 +260,6 @@ footer { display: flex; justify-content: space-between; }
   .label2 { font-size: 17px; }
   .label3 { font-size: 13px!important; }
   .icons { font-size: 13px; }
+  #skillImgs { grid-template-columns: 50% 50%; grid-template-rows: 20% 20% 20% 20% 20%; }
   #contactInfo { font-size: 14px; }
 }
