@@ -13,13 +13,6 @@ cards to create the carousel for the project section.
 ### Demo
 https://dev.loritanksley.com
 
-### Run
-```
-git clone
-cd my-portfolio
-preview index.html or open in browser
-```
-
 ### Technologies
 * HTML5
 * CSS3
